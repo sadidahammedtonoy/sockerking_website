@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | Play Socker King</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .content-page {
+            padding-top: 10rem;
+            padding-bottom: 6rem;
+        }
+
+        .content-page h1 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+            text-align: center;
+        }
+
+        .content-page>p {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: var(--on-surface-variant);
+        }
+
+        .support-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        /* FAQ Styles */
+        .faq-section h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-question h4 {
+            font-size: 1.1rem;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--on-surface-variant);
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question span {
+            transform: rotate(180deg);
+            color: var(--primary);
+        }
+
+        /* Form Styles */
+        .form-section {
+            padding: 3rem;
+            border-radius: 2.5rem;
+        }
+
+        .form-section h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: #fff;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .status-msg {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            display: none;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .status-msg.success {
+            display: block;
+            background: rgba(205, 254, 2, 0.1);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .status-msg.error {
+            display: block;
+            background: rgba(255, 0, 0, 0.1);
+            color: #ff4444;
+            border: 1px solid #ff4444;
+        }
+
+        @media (max-width: 1024px) {
+            .support-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Play Socker <span>King</span></a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#training">Training</a>
+                <a href="index.html#challenges">Challenges</a>
+            </div>
+            <div class="nav-cta">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container content-page">
+        <h1>Support Center</h1>
+        <p>Expert help for the true Soccer King. Find answers or reach out to us.</p>
+
+        <div class="support-container">
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h4>How do I earn the $10 credit?</h4>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        Simply go to your profile, tap on "Refer a Friend", and share your unique link. When they sign
+                        up using Google or Apple social login, you'll receive a $10 coupon automatically.
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h4>How do I cast videos to my TV?</h4>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        Open any training video, and you'll see the casting icon in the top right corner. Make sure your
+                        TV and phone are on the same Wi-Fi network.
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h4>Are the challenges live or recorded?</h4>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        Most challenges are curated video sessions that you can follow at your own pace. Some exclusive
+                        seasonal events may feature live components.
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h4>How do I change the app language?</h4>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        Go to Settings > Language. We currently support English and Polish, with more languages coming
+                        soon.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section glass">
+                <h2>Submit a Problem</h2>
+                <form id="support-form">
+                    <div class="form-group">
+                        <label for="email">User Email Address</label>
+                        <input type="email" id="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Describe your problem</label>
+                        <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Case</button>
+                    <div id="status-message" class="status-msg"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Play Socker King. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem; margin-bottom: 1rem;">
+                    <a href="https://apps.apple.com" target="_blank">iOS App Store</a>
+                    <a href="https://play.google.com/store" target="_blank">Google Play Store</a>
+                </div>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="eula.html">EULA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Form Handling
+        const form = document.getElementById('support-form');
+        const statusMsg = document.getElementById('status-message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Set button state
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Sending...';
+            btn.disabled = true;
+
+            try {
+                // In a real scenario, you would use a service like Formspree:
+                // await fetch("https://formspree.io/f/your_form_id", { ... })
+
+                // MOCK SUCCESS for user demonstration
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+
+                    statusMsg.innerText = 'Success! Your message has been sent to info@sockerking.com. We will contact you soon.';
+                    statusMsg.className = 'status-msg success';
+                    form.reset();
+
+                    // Logic for real email client fall-back if desired
+                    // window.location.href = `mailto:info@sockerking.com?subject=Support help asking for Play Socker King&body=From: ${email}%0D%0A%0D%0AMessage: ${message}`;
+                }, 1500);
+
+            } catch (error) {
+                btn.innerText = originalText;
+                btn.disabled = false;
+                statusMsg.innerText = 'Error! Failed to send message. Please try again or use the support email directly.';
+                statusMsg.className = 'status-msg error';
+            }
+        });
+    </script>
+</body>
+
+</html>
